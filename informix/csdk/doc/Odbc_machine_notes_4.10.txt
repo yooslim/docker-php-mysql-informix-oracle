@@ -1,0 +1,93 @@
+
+                      =================================
+                            MACHINE SPECIFIC NOTES
+                                    FOR
+                IBM INFORMIX-Client SDK 4.10.FC9 PRODUCT RELEASE
+                     IBM Informix ODBC Driver Version 4.10.FC9
+                             On Linux Intel 64bit
+                               DATE: 08 Jun 2017
+                      =================================
+
+OS Information : Built on Red Hat Enterprise Linux ES release 5.3 (Tikanga)
+                 Certified on RHEL 6 and 7, SUSE SLES 11 and 12,
+                 Ubuntu Server Edition 8.04, 10.04, 12.04 LTS
+                 and 14.04 LTS, Asianux 3 SP3, Debian 5.0,
+                 CentOS 6 and 7.
+
+Machine Specific Notes
+======================
+
+1. This product was built on Red Hat Enterprise Linux ES release 5.3
+   (Kernel: 2.6.18, Glibc: 2.5.34) for x86_64 compatible processors.
+   The following compilers were used:
+
+        gcc and g++ compiler 4.1.2 20080704 (Red Hat 4.1.2-44)
+
+   Installing the product on Ubuntu or Debian requires RPM to be installed
+   and initialized. After RPM installed, use the following commands to 
+   initialize RPM:
+
+        mkdir -p /var/lib/rpm 
+        rpm --initdb
+
+   The bc utility is required by the product installer, and needs to be 
+   installed on Ubuntu.
+
+2. For shared library support, environment variable LD_LIBRARY_PATH
+   needs to be set to include the $INFORMIXDIR/lib/cli directories
+   where IBM INFORMIX ODBC shared libraries are installed.
+
+   (for C Shell)
+   setenv LD_LIBRARY_PATH $INFORMIXDIR/lib:$INFORMIXDIR/lib/cli:
+         $INFORMIXDIR/lib/esql:$LD_LIBRARY_PATH
+
+   (for Bourne or Korn Shell)
+   LD_LIBRARY_PATH=$INFORMIXDIR/lib/cli:$INFORMIXDIR/lib/esql:
+                    $LD_LIBRARY_PATH
+   export LD_LIBRARY_PATH
+
+3. The thread safe ODBC libraries are supported on this platform using POSIX
+   threads. Make sure that you set the THREADLIB environment variable to
+   "POSIX" before linking your ODBC program using the esql script.
+   
+4. Pluggable Authentication Module (PAM)
+
+   PAM functionality is supported on Linux operating systems. The PAM is 
+   dependent on the libpam.so library supplied by the Operating System vendor.
+
+   Use of PAM can be enabled or disabled by the system administrator. By 
+   default, IBM IDS will use the traditional authentication mechanism in 
+   order to avoid widespread changes required by the users.
+
+   The PAM service identifies the PAM module. This PAM module typically
+   resides in /lib/security and its parameters are listed in /etc/pam.d.
+   The pam.conf file is ignored on Linux, if the /etc/pam.d directory is 
+   present.
+
+5. IPv6 Support 
+
+   The product supports Internet Protocol Version 6 (128 Bit Internet Addresses)
+   as well as IPv4 (32 Bit Addresses).
+
+   In order for the machine name specified in the SQLHOSTS file to resolve
+   to the correct IP address, the name services files on the Operating System
+   should be correctly configured. If the machine has IPv6 address configured
+   and the listener thread is bound to an IPv6 address, then the name
+   resolution files /etc/netsvc.conf should be configured to fetch IPv6
+   address. Also use the appropriate /etc/hosts setting if local machine
+   settings are used.
+
+   For compatibility with older IBM Informix client and server products,
+   assign the same hostname with both an IPv4 address and an IPv6 address.
+   If the listener needs to be bound to an IPv4 address and the name services
+   resolve the name in the order of the IPv6 address followed by IPv4 address,
+   then an explicit IPv4 address needs to be put in nodename field of SQLHOSTS
+   file. Client applications should also use the same setting.
+
+Check the following web site for the latest Linux system requirements:
+
+   http://www-01.ibm.com/support/docview.wss?rs=630&uid=swg27016673
+
+
+(C) Copyright IBM Corp. 2002, 2017
+

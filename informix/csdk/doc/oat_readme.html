@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="© Copyright IBM Corporation 2015" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2015" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta name="DC.Type" content="reference" />
+<meta name="DC.Title" content="Readme for IBM OpenAdmin Tool (OAT) for Informix, 3.17" />
+<meta name="DC.Date" scheme="iso8601" content="2014-10-07" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="oat_readme" />
+<meta name="DC.Language" content="en-us" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials - Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="./ibmdita.css" />
+<title>Readme for IBM OpenAdmin Tool (OAT) for Informix, 3.17</title>
+</head>
+<body role="main">
+<div class="nested0" id="oat_readme"><h1 class="title topictitle1">Readme for <span class="keyword">IBM OpenAdmin
+Tool (OAT) for Informix</span>,
+3.17</h1>
+<div class="body refbody"><div class="section"><h2 class="title sectiontitle">Contents</h2><ul class="ul"><li class="li"><a class="xref" href="README.html#oat_readme__description">IBM OpenAdmin Tool (OAT) for Informix</a></li>
+<li class="li"><a class="xref" href="README.html#oat_readme__min_ver">Minimum version requirements</a></li>
+<li class="li"><a class="xref" href="README.html#oat_readme__installoat">Installing OAT</a></li>
+<li class="li"><a class="xref" href="README.html#oat_readme__community">OpenAdmin Tool Community Edition</a></li>
+<li class="li"><a class="xref" href="README.html#oat_readme__community_install">Installing the OpenAdmin Tool Community Edition</a></li>
+<li class="li"><a class="xref" href="README.html#oat_readme__uninstall">Uninstalling OAT after manually installing</a></li>
+<li class="li"><a class="xref" href="README.html#oat_readme__upgrade">Upgrading from a previous version of OAT</a></li>
+<li class="li"><a class="xref" href="README.html#oat_readme__install_notes">Installation notes</a></li>
+<li class="li"><a class="xref" href="README.html#oat_readme__cluster">Configuring connectivity for high availability clusters</a></li>
+<li class="li"><a class="xref" href="README.html#oat_readme__plug-in">Adding a plug-in to OAT</a></li>
+<li class="li"><a class="xref" href="README.html#oat_readme__support">OpenAdmin Tool support forums</a></li>
+</ul>
+</div>
+<div class="section" id="oat_readme__description"><h2 class="title sectiontitle"><span class="keyword">IBM OpenAdmin
+Tool (OAT) for Informix</span></h2><p class="p">The <span class="keyword">IBM® OpenAdmin
+Tool (OAT) for Informix®</span> is
+a web application for administering and analyzing the performance
+of <span class="keyword">IBM Informix</span> database
+servers. You can administer multiple database server instances from
+a single <span class="keyword">OAT</span> installation
+on a web server. You can access the web server through any browser
+to administer all your database servers.</p>
+<p class="p"><span class="keyword">OAT</span> includes
+these optional plug-ins: the <span class="keyword">IBM Informix Health Advisor Plug-in
+for OpenAdmin Tool (OAT)</span>,
+the <span class="keyword">IBM Informix Replication Plug-in
+for OpenAdmin Tool (OAT)</span>,
+the <span class="keyword">IBM Informix Schema Manager Plug-in
+for OpenAdmin Tool (OAT)</span>,
+the <span class="keyword">IBM Informix TimeSeries Plug-in
+for OpenAdmin Tool (OAT)</span>,
+and the <span class="keyword">IBM Informix JSON Plug-in for OpenAdmin
+Tool (OAT)</span>.
+You can create more plug-ins for <span class="keyword">OAT</span> to
+add the functions that you need.</p>
+<dl class="dl"><dt class="dt dlterm">Prerequisites:</dt>
+<dd class="dd"><span class="keyword">OAT</span>,
+the <span class="keyword">Schema Manager plug-in</span> and
+the <span class="keyword">TimeSeries plug-in</span> require <span class="keyword">Informix</span> 11.10
+or later. The <span class="keyword">Health Advisor plug-in</span> requires <span class="keyword">Informix</span> 11.50.xC7
+or later. The <span class="keyword">Replication plug-in</span> requires <span class="keyword">Informix</span> 11.50.xC4
+or later. The <span class="keyword">JSON plug-in</span> requires <span class="keyword">Informix</span> 12.10.xC2
+or later.</dd>
+</dl>
+</div>
+<div class="section" id="oat_readme__min_ver"><h2 class="title sectiontitle">Minimum version requirements</h2><p class="p">The
+minimum version requirements for products that <span class="keyword">OAT</span> uses
+are listed in the following table.</p>
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="oat_readme__minverreq" class="table" rules="all" frame="border" border="1"><caption><span class="tablecap">Table 1. Minimum version requirements</span></caption><thead class="thead" align="left"><tr class="row"><th class="entry" align="center" valign="top" width="50%" id="d67e187">Product</th>
+<th class="entry" align="center" valign="top" width="50%" id="d67e189">Version</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" valign="top" width="50%" headers="d67e187 ">Mozilla Firefox web browser (Recommended)</td>
+<td class="entry" align="center" valign="top" width="50%" headers="d67e189 ">10</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="50%" headers="d67e187 ">Microsoft Internet
+Explorer web browser</td>
+<td class="entry" align="center" valign="top" width="50%" headers="d67e189 ">8</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="50%" headers="d67e187 ">Apple Safari web browser</td>
+<td class="entry" align="center" valign="top" width="50%" headers="d67e189 ">6</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="50%" headers="d67e187 ">Google Chrome web browser</td>
+<td class="entry" align="center" valign="top" width="50%" headers="d67e189 ">32</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="50%" headers="d67e187 "><span class="keyword">IBM Informix</span> database
+server</td>
+<td class="entry" align="center" valign="top" width="50%" headers="d67e189 ">11.10</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="50%" headers="d67e187 ">PHP</td>
+<td class="entry" align="center" valign="top" width="50%" headers="d67e189 ">5.2.4</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" width="50%" headers="d67e187 ">Adobe Flash Player</td>
+<td class="entry" align="center" valign="top" width="50%" headers="d67e189 ">11</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="oat_readme__installoat"><h2 class="title sectiontitle">Installing <span class="keyword">OAT</span></h2><p class="p">The <span class="keyword">IBM OpenAdmin
+Tool (OAT) for Informix</span> is
+installed by default on the supported platforms during a typical installation
+of the <span class="keyword">IBM Informix Client Software Development
+Kit (Client SDK)</span> or
+when you install the <span class="keyword">IBM Informix</span> software
+bundle and select <span class="keyword">Client SDK</span>. This
+installation program includes <span class="keyword">OAT</span>, the <span class="keyword">Health Advisor plug-in</span>, the <span class="keyword">Replication plug-in</span>, the <span class="keyword">Schema Manager plug-in</span>, the <span class="keyword">TimeSeries plug-in</span>, the <span class="keyword">JSON plug-in</span>, and
+all necessary software to run <span class="keyword">OAT</span>, including
+pre-configured Apache, PHP, and PDO_informix. For more information,
+see the topics in the <span class="keyword">Informix</span> information
+center on <em class="ph i">Installing <span class="keyword">IBM OpenAdmin
+Tool (OAT) for Informix</span> with
+the <span class="keyword">Client SDK</span></em>: <a class="xref" href="http://www.ibm.com/support/knowledgecenter/SSGU8G_12.1.0/com.ibm.cpi.doc/ids_cpi_027.htm" target="_blank" title="(Opens in a new tab or window)">http://www.ibm.com/support/knowledgecenter/SSGU8G_12.1.0/com.ibm.cpi.doc/ids_cpi_027.htm</a>.</p>
+<p class="p">Alternatively,
+you can download the OpenAdmin Tool Community Edition, which requires
+manual installation and does not include Apache, PHP, or PDO_informix.
+This readme file provides information for downloading and installing
+the OpenAdmin Tool Community Edition.</p>
+</div>
+<div class="section" id="oat_readme__community"><h2 class="title sectiontitle">OpenAdmin Tool Community Edition</h2><p class="p">The
+community edition of the <span class="keyword">IBM OpenAdmin
+Tool (OAT) for Informix</span> includes
+all the features and functionality of the <span class="keyword">IBM OpenAdmin
+Tool (OAT) for Informix</span> that
+you install with the <span class="keyword">IBM Informix Client Software Development
+Kit (Client SDK)</span> or
+with the <span class="keyword">IBM Informix</span> software
+bundle when you select <span class="keyword">Client SDK</span>.</p>
+<p class="p">Support
+for the community edition of <span class="keyword">OAT</span> is
+available through discussion forums hosted by the International <span class="keyword">Informix</span> User
+Group (IIUG) and the <span class="keyword">IBM developerWorks®</span><span class="keyword">Informix</span> technical
+forums. For more information, see <a class="xref" href="README.html#oat_readme__support">OpenAdmin Tool support forums</a>.</p>
+</div>
+<div class="section" id="oat_readme__community_install"><h2 class="title sectiontitle">Installing the OpenAdmin Tool
+Community Edition</h2><p class="p">The OpenAdmin Tool Community Edition is
+installed manually. The <span class="keyword">Health Advisor plug-in</span>, the <span class="keyword">Replication plug-in</span>, the <span class="keyword">Schema Manager plug-in</span>, the <span class="keyword">TimeSeries plug-in</span>, the <span class="keyword">JSON plug-in</span> can
+be installed with the <span class="keyword">OAT</span> Community
+Edition.</p>
+<dl class="dl"><dt class="dt dlterm">Prerequisites</dt>
+<dd class="dd"><p class="p"> To install <span class="keyword">OAT</span> manually,
+you must have working knowledge of web servers and PHP. If you do
+not have this knowledge, you might need assistance from a web server
+administrator in your organization.</p>
+<p class="p"><span class="keyword">OAT</span> is
+platform independent. You can manually install and run <span class="keyword">OAT</span> on
+any operating system for which you can set up and run the prerequisites
+listed in this section.</p>
+<p class="p"><span class="keyword">OAT</span> requires
+that the following products be installed. The versions in parentheses
+indicate the versions with which <span class="keyword">OAT</span> has
+been tested.</p>
+<ul class="ul"><li class="li">A web server (Apache 2.2.22, 2.4.2)</li>
+<li class="li"><span class="keyword">IBM Informix Connect</span> or <span class="keyword">IBM Informix Client Software Development
+Kit (Client SDK)</span> (4.10.xC2)</li>
+<li class="li">PHP 5.2.4 (minimum) compiled with PDO, PDO_SQLITE, GD, and SOAP-enabled
+(5.2.4, 5.4.4)</li>
+<li class="li"><span class="keyword">Informix</span> PDO
+Module</li>
+<li class="li">Adobe Flash Player (11)</li>
+</ul>
+<div class="note important"><span class="importanttitle">Important:</span> The PHP and the PDO must come from the
+same PHP version.</div>
+</dd>
+<dt class="dt dlterm">Download packages</dt>
+<dd class="dd"><p class="p">You can download the OpenAdmin Tool Community Edition from
+the <span class="keyword">IBM Informix</span> Free
+Product Download page: <a class="xref" href="https://www14.software.ibm.com/webapp/iwm/web/preLogin.do?lang=en_US&amp;source=swg-informixfpd" target="_blank" title="(Opens in a new tab or window)">https://www14.software.ibm.com/webapp/iwm/web/preLogin.do?lang=en_US&amp;source=swg-informixfpd</a>. </p>
+<p class="p">These
+files are available to download.</p>
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" rules="all" frame="border" border="1"><caption><span class="tablecap">Table 2. <span class="keyword">OAT</span> download
+packages</span></caption><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry" valign="bottom" id="d67e481">Download</th>
+<th class="entry" valign="bottom" id="d67e483">Description</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" valign="top" headers="d67e481 ">oatidsV3.17.tar</td>
+<td class="entry" valign="top" headers="d67e483 ">OpenAdmin Tool Community Edition packaged as
+a tar file. The package includes <span class="keyword">OAT</span>, the <span class="keyword">Health Advisor plug-in</span>, the <span class="keyword">Replication plug-in</span>, the <span class="keyword">Schema Manager plug-in</span>, the <span class="keyword">TimeSeries plug-in</span>, and
+the <span class="keyword">JSON plug-in</span>.
+It does not include Apache, PHP, PDO_informix, or <span class="keyword">IBM Informix Connect</span>.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d67e481 ">oatidsV3.17.zip</td>
+<td class="entry" valign="top" headers="d67e483 ">OpenAdmin Tool Community Edition packaged as
+a compressed file. The package includes <span class="keyword">OAT</span>, the <span class="keyword">Health Advisor plug-in</span>, the <span class="keyword">Replication plug-in</span>, the <span class="keyword">Schema Manager plug-in</span>, the <span class="keyword">TimeSeries plug-in</span>, and
+the <span class="keyword">JSON plug-in</span>.
+It does not include Apache, PHP, PDO_informix, or <span class="keyword">IBM Informix Connect</span>. </td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d67e481 ">README.html</td>
+<td class="entry" valign="top" headers="d67e483 ">Instructions on how to install the OpenAdmin
+Tool Community Edition. (This document.)</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d67e481 ">RELEASENOTES.html	</td>
+<td class="entry" valign="top" headers="d67e483 ">Fixed defects for the release. Link to new features.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd>
+<dt class="dt dlterm">Installation instructions</dt>
+<dd class="dd">To install the OpenAdmin Tool Community Edition:<ol class="ol"><li class="li">Install and set up a working web server that is configured to
+serve PHP pages. For more information, see the <a class="xref" href="README.html#oat_readme__install_notes">Installation notes</a> section.<p class="p">For further help,
+consult the web server product documentation for installation instructions,
+or contact the product customer service representatives for assistance.</p>
+</li>
+<li class="li">Update the PHP configuration file (<span class="ph filepath">php.ini</span>):<ol class="ol" type="a"><li class="li">Open the <span class="ph filepath">php.ini</span> file for editing.<p class="p">If you
+are using the XAMPP package:</p>
+<ul class="ul"><li class="li"><span class="keyword">Windows</span>:
+Edit the <span class="ph filepath">php.ini</span> file in the <span class="ph filepath">apache/bin</span> folder,
+not in the <span class="ph filepath">php</span> folder.</li>
+<li class="li"><span class="keyword">Linux</span>:
+Edit the <span class="ph filepath">php.ini </span>file in the <span class="ph filepath">/etc</span> folder.</li>
+<li class="li"><span class="keyword">Mac OS X</span>:
+Edit the <span class="ph filepath">php.ini </span>file in the <span class="ph filepath">/Applications/xampp/etc</span> folder.</li>
+</ul>
+<p class="p">If you are not sure about the location of the correct <span class="ph filepath">php.ini</span> configuration
+file, run the <span class="keyword cmdname">phpinfo()</span> command within a PHP script
+on your web server to determine the location of the correct <span class="ph filepath">php.ini</span> file.</p>
+</li>
+<li class="li">Add the following two lines after the <samp class="ph codeph">extension=php_pdo.dll</samp> line
+to the <span class="q">"extension"</span> section of the configuration file:<pre class="pre codeblock"><code>extension=php_pdo_informix.dll
+extension=php_pdo_sqlite.dll </code></pre>
+If these lines are already
+present, remove any comment indicators from in front of them.  </li>
+<li class="li">Modify the <samp class="ph codeph">memory_limit</samp> parameter to be at least
+256 MB.</li>
+</ol>
+</li>
+<li class="li">Install <span class="keyword">Informix Connect</span> or <span class="keyword">Client SDK</span>.</li>
+<li class="li" id="oat_readme__extract">Extract the <span class="keyword">OAT</span> package
+into your web server document root directory <var class="keyword varname">rootdir</var>/<var class="keyword varname">OATINSTALL</var>.
+For example:   <ul class="ul"><li class="li"><span class="keyword">Windows</span>: <span class="ph filepath">C:\xampp\htdocs\oat</span></li>
+<li class="li"><span class="keyword">UNIX</span> or <span class="keyword">Linux</span>:<span class="ph filepath">/usr/local/apache2/htdocs/oat</span></li>
+<li class="li"><span class="keyword">Mac OS X</span>: <span class="ph filepath">/Applications/xampp/htdocs/oat</span></li>
+</ul>
+<div class="note important"><span class="importanttitle">Important:</span>  For security reasons, set password protection
+for the <span class="keyword">OAT</span> administration
+web pages. For more information and an example, see <em class="ph i">Providing password
+protection for the Admin configuration pages: Apache example </em> in
+the <span class="ph uicontrol">OAT Help</span> or in the <span class="keyword">Informix</span> information
+center at <a class="xref" href="http://www.ibm.com/support/knowledgecenter/SSGU8G_12.1.0/com.ibm.oat.doc/ids_oat_071.htm" target="_blank" title="(Opens in a new tab or window)">http://www.ibm.com/support/knowledgecenter/SSGU8G_12.1.0/com.ibm.oat.doc/ids_oat_071.htm</a>.</div>
+</li>
+<li class="li"><strong class="ph b"><span class="keyword">UNIX</span>, <span class="keyword">Linux</span>, or <span class="keyword">Mac OS X</span> users</strong>:
+Change the user or group ownership and permissions on the <span class="keyword">OAT</span> directories.
+      <ol class="ol" type="a"><li class="li">Determine which user and group run the Apache (HTTPd) server from
+the <span class="ph filepath">httpd.conf</span> file.</li>
+<li class="li">Change ownership for each <span class="keyword">OAT</span> subdirectory
+to the user and group that run the Apache (HTTPd) server.</li>
+<li class="li">Grant write permissions to all <span class="keyword">OAT</span> subdirectories
+and files.   <p class="p">Following is the syntax for changing the ownership
+and permissions:  </p>
+<span class="keyword cmdname">chown</span> <samp class="ph codeph"><var class="keyword varname">user</var>:<var class="keyword varname">group</var> <var class="keyword varname">OATINSTALL</var>; </samp><span class="keyword cmdname">chmod
++w</span> <var class="keyword varname">OATINSTALL</var>;<p class="p">Where <var class="keyword varname">OATINSTALL</var> is
+the root directory for <span class="keyword">OAT</span>, which
+is the same directory where you extracted the <span class="keyword">OAT</span> package.</p>
+</li>
+</ol>
+</li>
+<li class="li">In the web server environment, set the <span class="keyword parmname parmname">INFORMIXDIR</span> environment
+variable to the <span class="keyword">Informix Connect</span> or the <span class="keyword">Client SDK</span> installation
+location. <ul class="ul"><li class="li"><span class="keyword">Windows</span>:
+In the Control Panel, click <span class="ph uicontrol">System</span>. In the <span class="ph uicontrol">System
+Properties</span> dialog box, click the <span class="ph uicontrol">Advanced</span> tab,
+and then click <span class="ph uicontrol">Environment Variables</span>. Add or
+edit the system variable <span class="keyword parmname parmname">INFORMIXDIR</span>.</li>
+<li class="li"><span class="keyword">UNIX</span>, <span class="keyword">Linux</span>, and <span class="keyword">Mac OS X</span>: Set
+the environment variable in the shell.</li>
+</ul>
+</li>
+<li class="li">Start the web server.<p class="p">If you started the web server before you
+modified the <span class="ph filepath">php.ini</span> file or before you set the <span class="keyword parmname parmname">INFORMIXDIR</span> environment
+variable in the environment, restart the web server for the changes
+to take effect.</p>
+</li>
+<li class="li">To start the <span class="keyword">OAT</span> installer,
+go to http://<var class="keyword varname">SERVERNAME</var>/<var class="keyword varname">OATINSTALL</var>/install <p class="p">Where: </p>
+ <ul class="ul"><li class="li"><var class="keyword varname">SERVERNAME</var> is the name of the server where
+the web server is running</li>
+<li class="li"><var class="keyword varname">OATINSTALL</var> is the location of <span class="keyword">OAT</span> within
+your web server document root directory, where you extracted the <span class="keyword">OAT</span> package.</li>
+</ul>
+<p class="p">For example: <span class="ph filepath">http://localhost/oat/install</span>  </p>
+</li>
+<li class="li">Follow the instructions in the <span class="keyword">OAT</span> installation
+screens: <ol class="ol" type="a"><li class="li">Read and accept the license agreement.</li>
+<li class="li">Verify that all the required PHP modules are installed. If so,
+click <span class="ph uicontrol">Next</span>; if not, check your PHP installation.</li>
+<li class="li">Modify and verify the following configuration parameters: <ul class="ul"><li class="li">LANG: Specify the default language for the application screens.</li>
+<li class="li">CONNDBDIR: Set the directory for the connections database. <div class="note important"><span class="importanttitle">Important:</span> For security purposes, specify a secure directory
+for the <span class="ph filepath">connections.db</span> file. Do not use the web
+server document root directory. Additionally, ensure that the directory
+in which the <span class="ph filepath">connections.db</span> file is located is
+accessible by the user who runs Apache.</div>
+</li>
+<li class="li">BASEURL: Specify the root URL used to start <span class="keyword">OAT</span>:  <span class="ph filepath">http://<var class="keyword varname">SERVERNAME</var>/<var class="keyword varname">OATINSTALL</var></span><p class="p">For
+example: <span class="ph filepath">http://localhost:8080/OAT</span></p>
+</li>
+<li class="li">HOMEDIR: Verify the directory into which you extracted the installation
+package.</li>
+<li class="li">SECURESQL: Specify whether to prompt for login credentials when
+you use the SQLToolbox.</li>
+<li class="li">INFORMIXCONTIME: Specify the number of seconds that <span class="keyword">OAT</span> waits
+to connect to the database server before <span class="keyword">OAT</span> returns
+an error.</li>
+<li class="li">INFORMIXCONRETRY: Specify the number of times that <span class="keyword">OAT</span> attempts
+to connect to the database server during the connect time that is
+specified by the INFORMIXCONTIME configuration parameter. </li>
+</ul>
+</li>
+<li class="li">To create the connections database, click <span class="ph uicontrol">Next</span>.
+The connections database is created. Click <span class="ph uicontrol">Next</span> to
+continue.</li>
+<li class="li">Select the plug-ins to install and accept the plug-in license
+agreements.</li>
+</ol>
+</li>
+<li class="li">Optional: To access a database with a locale that is not included
+in <span class="keyword">Client SDK</span>,
+install the locale by using the <span class="keyword">IBM Informix International Language
+Supplement</span> (ILS). <span class="keyword">OAT</span> requires
+the UTF-8 locales for all the databases that you access through <span class="keyword">OAT</span>. After
+you install <span class="keyword">OAT</span>,
+install ILS on the computer where <span class="keyword">OAT</span> is
+installed, in the <span class="keyword">Informix Connect</span> or <span class="keyword">Client SDK</span> directory.
+Use ILS to install the additional locale, including the UTF-8 version,
+in the <span class="keyword">Informix Connect</span> or <span class="keyword">Client SDK</span> directory
+that <span class="keyword">OAT</span> is
+using. The database name must be in English characters.</li>
+<li class="li">When the installation is completed, go to the <span class="keyword">OAT</span> root
+URL: <span class="ph filepath">http://<var class="keyword varname">SERVERNAME</var>/<var class="keyword varname">OATINSTALL</var></span>.</li>
+<li class="li">On the <span class="keyword wintitle">Login</span> page, select <span class="ph uicontrol">Admin</span> and
+then expand <span class="ph uicontrol">Manage Connections</span> to add an <span class="keyword">Informix</span> 11.10
+(or later) connection to the default group, or to create a group.<p class="p">If
+you are using an <span class="keyword">Informix Connect</span> or <span class="keyword">Client SDK</span> version
+earlier than V3.0, for each new connection that you add, ensure that
+there is a corresponding <samp class="ph codeph">SQLHOSTS</samp> entry for that
+connection on the web server.</p>
+<p class="p">To connect to a server, after
+a connection is created, click <span class="ph uicontrol">Login</span>. Click <span class="ph uicontrol">Get
+Servers</span> to retrieve the list of connections that you created,
+and then select the server.</p>
+</li>
+</ol>
+</dd>
+</dl>
+</div>
+<div class="section" id="oat_readme__uninstall"><h2 class="title sectiontitle">Uninstalling <span class="keyword">OAT</span> after
+manually installing</h2><div class="note important"><span class="importanttitle">Important:</span> If you installed <span class="keyword">OAT</span> with
+the <span class="keyword">Client SDK</span>,
+see the topic in the <span class="keyword">Informix</span> information
+center on <em class="ph i">Uninstalling the OpenAdmin Tool (OAT) for <span class="keyword">Informix</span> after
+installing it with the <span class="keyword">Client SDK</span></em>: <a class="xref" href="http://www.ibm.com/support/knowledgecenter/SSGU8G_12.1.0/com.ibm.cpi.doc/ids_cpi_032.htm " target="_blank" title="(Opens in a new tab or window)">http://www.ibm.com/support/knowledgecenter/SSGU8G_12.1.0/com.ibm.cpi.doc/ids_cpi_032.htm </a>.
+Do not remove <span class="keyword">OAT</span> by
+manually deleting the files.</div>
+<p class="p">To uninstall OpenAdmin Tool
+Community Edition manually, delete the <var class="keyword varname">OATINSTALL</var> directory.</p>
+</div>
+<div class="section" id="oat_readme__upgrade"><h2 class="title sectiontitle">Upgrading from a previous version of <span class="keyword">OAT</span></h2><p class="p">To
+upgrade to OpenAdmin Tool Community Edition v3.17 from a previous
+version, uninstall the old version and install the new version in
+the same directory. <span class="keyword">OAT</span> v2.20
+and later preserves the connection database information.</p>
+</div>
+<div class="section" id="oat_readme__install_notes"><h2 class="title sectiontitle">Installation notes</h2><div class="p">The
+following section provides more information about installing and configuring <span class="keyword">OAT</span> and
+provides other support resources.<dl class="dl"><dt class="dt dlterm">DBSPACETEMP configuration parameter</dt>
+<dd class="dd">You must define an appropriate value for the DBSPACETEMP configuration
+parameter for all the database servers that you want to use for <span class="keyword">OAT</span> before
+you use <span class="keyword">OAT</span>.</dd>
+<dt class="dt dlterm">Avoiding page timeout errors</dt>
+<dd class="dd"><p class="p">Set the <span class="keyword">Informix Connect</span> or <span class="keyword">Client SDK</span> variables <span class="keyword parmname parmname">INFORMIXCONRETRY</span> and <span class="keyword parmname parmname">INFORMIXCONTIME</span> to
+avoid page timeout errors for invalid connection information. The
+recommended settings are: </p>
+<ul class="ul"><li class="li"><samp class="ph codeph">INFORMIXCONRETRY=1</samp></li>
+<li class="li"><samp class="ph codeph">INFORMIXCONTIME=3</samp></li>
+</ul>
+</dd>
+<dt class="dt dlterm">XAMPP package</dt>
+<dd class="dd">For a manual installation, the XAMPP package is an easy-to-install
+Apache distribution that contains MySQL, PHP, and Perl. You can download
+the XAMPP package from the following website: <a class="xref" href="http://www.apachefriends.org/en/xampp.html" target="_blank" title="(Opens in a new tab or window)">http://www.apachefriends.org/en/xampp.html</a>.<p class="p">For
+more detailed instructions on how to install <span class="keyword">OAT</span> by
+using the XAMPP package, refer to the following articles: </p>
+<ul class="ul"><li class="li"><em class="ph i">Installing IDSAdmin in a <span class="keyword">Windows</span> XAMPP
+environment</em>: <a class="xref" href="https://www.ibm.com/developerworks/community/blogs/idsteam/entry/installing_idsadmin_in_a_xampp" target="_blank" title="(Opens in a new tab or window)">https://www.ibm.com/developerworks/community/blogs/idsteam/entry/installing_idsadmin_in_a_xampp</a>.</li>
+<li class="li"><em class="ph i">OpenAdmin Tool XAMPP Installation on <span class="keyword">Linux</span></em>: <a class="xref" href="https://www.ibm.com/developerworks/community/blogs/idsteam/entry/openadmin_tool_xampp_installation_on" target="_blank" title="(Opens in a new tab or window)">https://www.ibm.com/developerworks/community/blogs/idsteam/entry/openadmin_tool_xampp_installation_on</a>.</li>
+</ul>
+</dd>
+<dt class="dt dlterm"><span class="keyword">Informix</span> PDO
+driver</dt>
+<dd class="dd">The following <span class="keyword">IBM developerWorks</span> article
+contains useful information to assist with building an <span class="keyword">Informix</span> PDO driver: <em class="ph i">A
+step-by-step how-to guide to install, configure, and test a <span class="keyword">Linux</span>, Apache, <span class="keyword">Informix</span>, and
+PHP server</em>: <a class="xref" href="http://www.ibm.com/developerworks/data/library/techarticle/dm-0606bombardier/" target="_blank" title="(Opens in a new tab or window)">http://www.ibm.com/developerworks/data/library/techarticle/dm-0606bombardier/</a>.</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="oat_readme__cluster"><h2 class="title sectiontitle">Configuring connectivity for high availability
+clusters</h2><p class="p">If you are using the high availability clusters
+features from <span class="keyword">OAT</span> to
+start and stop secondary servers or to add SD secondary servers, you
+must configure the following daemons on the <span class="keyword">Informix</span> server:</p>
+<ul class="ul"><li class="li"><span class="ph filepath">xinetd</span> or <span class="ph filepath">inetd</span>:  <ul class="ul"><li class="li"><span class="keyword">Linux</span> - <span class="ph filepath">xinetd</span> daemon.</li>
+<li class="li"><span class="keyword">UNIX</span> - <span class="ph filepath">inetd</span> daemon:
+See your operating system information.</li>
+</ul>
+</li>
+<li class="li"><span class="ph filepath">idsd</span> daemon: Installed with <span class="keyword">IBM Informix</span> 11.50
+and later. This file is in the <span class="ph filepath">$INFORMIXDIR/bin</span> directory.
+For information and examples for configuring the <span class="ph filepath">idsd</span> daemon,
+see <em class="ph i">Configuring connectivity for high availability clusters</em> in
+the <span class="ph uicontrol">OAT HELP </span> or in the <span class="keyword">Informix</span> information
+center at <a class="xref" href="http://www.ibm.com/support/knowledgecenter/SSGU8G_12.1.0/com.ibm.oat.doc/ids_oat_059.htm" target="_blank" title="(Opens in a new tab or window)">http://www.ibm.com/support/knowledgecenter/SSGU8G_12.1.0/com.ibm.oat.doc/ids_oat_059.htm</a>.<p class="p">The <span class="ph filepath">idsd</span> daemon
+requires <span class="keyword">Informix</span> 11.50
+or later. Also, the <span class="ph filepath">idsd</span> daemon is not currently
+available on <span class="keyword">Mac OS X</span> or <span class="keyword">Windows</span>.
+Without the <span class="ph filepath">idsd</span> daemon, the high availability
+cluster management interface is available in <span class="keyword">OAT</span>, but
+the feature set is limited.</p>
+</li>
+</ul>
+</div>
+<div class="section" id="oat_readme__plug-in"><h2 class="title sectiontitle">Adding a plug-in to <span class="keyword">OAT</span></h2><p class="p">You
+can add plug-ins that are created by <span class="keyword">IBM</span> or by
+other organizations to <span class="keyword">OAT</span>. Plug-ins
+that are created by <span class="keyword">IBM</span> are
+included in the automated and manual installations for <span class="keyword">OAT</span>. For
+instructions on installing a plug-in from another organization, see <em class="ph i">Installing
+a plug-in for OAT </em> in the <span class="ph uicontrol">OAT HELP </span> or
+in the <span class="keyword">Informix</span> information
+center at <a class="xref" href="http://www.ibm.com/support/knowledgecenter/SSGU8G_12.1.0/com.ibm.oat.doc/ids_oat_000.htm " target="_blank" title="(Opens in a new tab or window)">http://www.ibm.com/support/knowledgecenter/SSGU8G_12.1.0/com.ibm.oat.doc/ids_oat_000.htm </a>.</p>
+</div>
+<div class="section" id="oat_readme__support"><h2 class="title sectiontitle">OpenAdmin Tool support forums</h2><p class="p">To
+ask questions, exchange ideas, and share solutions with your peers
+in the <span class="keyword">Informix</span> community,
+visit the following forums:  </p>
+<ul class="ul"><li class="li">International <span class="keyword">Informix</span> Users
+Group (IIUG) OpenAdmin Tool forum: <a class="xref" href="http://www.iiug.org/forums/oat " target="_blank" title="(Opens in a new tab or window)">http://www.iiug.org/forums/oat </a></li>
+<li class="li"><span class="keyword">IBM Informix</span> Developer
+and User Forum: <a class="xref" href="http://www.ibm.com/developerworks/forums/forum.jspa?forumID=548" target="_blank" title="(Opens in a new tab or window)">http://www.ibm.com/developerworks/forums/forum.jspa?forumID=548</a></li>
+</ul>
+</div>
+</div>
+<div class="related-links"></div></div>
+<div class="topic concept nested0" xml:lang="en-us" id="ids_cm_not"><h1 class="title topictitle1">Notices</h1>
+<div class="body conbody" id="con_body"><p class="p">This information was developed for products and services offered
+in the U.S.A. <span class="ph">This material may be available from <span class="keyword">IBM</span> in other languages.
+However, you may be required to own a copy of the product or product
+version in that language in order to access it.</span></p>
+<p class="p"><span class="keyword">IBM</span> may
+not offer the products, services, or features discussed in this document
+in other countries. Consult your local <span class="keyword">IBM</span> representative
+for information on the products and services currently available in
+your area. Any reference to an <span class="keyword">IBM</span> product, program,
+or service is not intended to state or imply that only that <span class="keyword">IBM</span> product, program,
+or service may be used. Any functionally equivalent product, program,
+or service that does not infringe any <span class="keyword">IBM</span> intellectual property
+right may be used instead. However, it is the user's responsibility
+to evaluate and verify the operation of any non-IBM product, program,
+or service.  </p>
+<div class="p"><span class="keyword">IBM</span> may
+have patents or pending patent applications covering subject matter
+described in this document. The furnishing of this document does not
+grant you any license to these patents. You can send license inquiries,
+in writing, to:  <p class="lines">IBM Director of Licensing<br />
+IBM Corporation<br />
+North Castle Drive<br />
+Armonk, NY 10504-1785<br />
+U.S.A. </p>
+</div>
+<div class="p">For license inquiries regarding double-byte (DBCS) information,
+contact the <span class="keyword">IBM</span> Intellectual
+Property Department in your country or send inquiries, in writing,
+to: <p class="lines">Intellectual Property Licensing<br />
+Legal and Intellectual Property Law<br />
+IBM Japan, Ltd.<br />
+19-21, Nihonbashi-Hakozakicho, Chuo-ku<br />
+Tokyo 103-8510, Japan</p>
+</div>
+<p class="p"><span class="ph">The following paragraph does not apply to the United Kingdom
+or any other country where such provisions are inconsistent with local
+law:</span> INTERNATIONAL BUSINESS MACHINES CORPORATION PROVIDES THIS
+PUBLICATION "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR
+IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+Some states do not allow disclaimer of express or implied warranties
+in certain transactions, therefore, this statement may not apply to
+you. </p>
+<p class="p">This information could include technical inaccuracies or typographical
+errors. Changes are periodically made to the information herein; these
+changes will be incorporated in new editions of the publication. <span class="keyword">IBM</span> may make improvements
+and/or changes in the product(s) and/or the program(s) described in
+this publication at any time without notice. </p>
+<p class="p">Any references in this information to non-IBM websites are provided
+for convenience only and do not in any manner serve as an endorsement
+of those websites. The materials at those websites are not part of
+the materials for this <span class="keyword">IBM</span> product
+and use of those websites is at your own risk. </p>
+<p class="p"><span class="keyword">IBM</span> may
+use or distribute any of the information you supply in any way it
+believes appropriate without incurring any obligation to you.</p>
+<div class="p">Licensees of this program who wish to have information about it
+for the purpose of enabling: (i) the exchange of information between
+independently created programs and other programs (including this
+one) and (ii) the mutual use of the information which has been exchanged,
+should contact: <p class="lines">IBM Corporation<br />
+J46A/G4<br />
+555 Bailey Avenue<br />
+San Jose, CA 95141-1003<br />
+U.S.A.</p>
+</div>
+<p class="p">Such information may be available, subject to appropriate terms
+and conditions, including in some cases, payment of a fee. </p>
+<p class="p">The licensed program described in this document and all licensed
+material available for it are provided by <span class="keyword">IBM</span> under terms of
+the <span class="keyword">IBM</span> Customer
+Agreement, <span class="keyword">IBM</span> International
+Program License Agreement or any equivalent agreement between us.</p>
+<p class="p">Any performance data contained herein was determined in a controlled
+environment. Therefore, the results obtained in other operating environments
+may vary significantly. Some measurements may have been made on development-level
+systems and there is no guarantee that these measurements will be
+the same on generally available systems. Furthermore, some measurements
+may have been estimated through extrapolation. Actual results may
+vary. Users of this document should verify the applicable data for
+their specific environment. </p>
+<p class="p">Information concerning non-IBM products was obtained from the suppliers
+of those products, their published announcements or other publicly
+available sources. <span class="keyword">IBM</span> has
+not tested those products and cannot confirm the accuracy of performance,
+compatibility or any other claims related to non-IBM products. Questions
+on the capabilities of non-IBM products should be addressed to the
+suppliers of those products. </p>
+<p class="p">All statements regarding IBM's future direction or intent are subject
+to change or withdrawal without notice, and represent goals and objectives
+only. </p>
+<p class="p">All <span class="keyword">IBM</span> prices
+shown are IBM's suggested retail prices, are current and are subject
+to change without notice. Dealer prices may vary. </p>
+<p class="p">This information is for planning purposes only. The information
+herein is subject to change before the products described become available. </p>
+<p class="p">This information contains examples of data and reports used in
+daily business operations. To illustrate them as completely as possible,
+the examples include the names of individuals, companies, brands,
+and products. All of these names are fictitious and any similarity
+to the names and addresses used by an actual business enterprise is
+entirely coincidental. </p>
+<p class="p">COPYRIGHT LICENSE: </p>
+<p class="p">This information contains sample application programs in source
+language, which illustrate programming techniques on various operating
+platforms. You may copy, modify, and distribute these sample programs
+in any form without payment to <span class="keyword">IBM</span>, for the purposes
+of developing, using, marketing or distributing application programs
+conforming to the application programming interface for the operating
+platform for which the sample programs are written. These examples
+have not been thoroughly tested under all conditions. <span class="keyword">IBM</span>, therefore, cannot
+guarantee or imply reliability, serviceability, or function of these
+programs. The sample programs are provided "AS IS", without warranty
+of any kind. <span class="keyword">IBM</span> shall
+not be liable for any damages arising out of your use of the sample
+programs.</p>
+<p class="p">Each copy or any portion of these sample programs or any derivative
+work, must include a copyright notice as follows: </p>
+<p class="p">© (your company name) (year). Portions of this code are derived
+from <span class="keyword">IBM</span> Corp.
+Sample Programs. </p>
+<p class="p">© Copyright <span class="keyword">IBM</span> Corp.
+_enter the year or years_. All rights reserved. </p>
+<p class="p">If you are viewing this information softcopy, the photographs and
+color illustrations may not appear. </p>
+</div>
+<div class="related-links"></div><div class="topic concept nested1" xml:lang="en-us" id="privacypolicy"><h2 class="title topictitle2">Privacy policy considerations</h2>
+<div class="body conbody"><p class="p"><span class="keyword">IBM</span> Software
+products, including software as a service solutions, (“Software
+Offerings”) may use cookies or other technologies to collect
+product usage information, to help improve the end user experience,
+to tailor interactions with the end user, or for other purposes. In
+many cases no personally identifiable information is collected by
+the Software Offerings. Some of our Software Offerings can help enable
+you to collect personally identifiable information. If this Software
+Offering uses cookies to collect personally identifiable information,
+specific information about this offering’s use of cookies is
+set forth below.</p>
+<p class="p">This Software Offering does not use cookies or other technologies
+to collect personally identifiable information.</p>
+<p class="p">If the configurations deployed for this Software Offering provide
+you as customer the ability to collect personally identifiable information
+from end users via cookies and other technologies, you should seek
+your own legal advice about any laws applicable to such data collection,
+including any requirements for notice and consent.</p>
+<p class="p">For more information about the use of various technologies, including
+cookies, for these purposes, see <span class="keyword">IBM</span>’s Privacy
+Policy at <a class="xref" href="http://www.ibm.com/privacy" target="_blank" title="(Opens in a new tab or window)">http://www.ibm.com/privacy</a> and <span class="keyword">IBM</span>’s Online
+Privacy Statement at <a class="xref" href="http://www.ibm.com/privacy/details" target="_blank" title="(Opens in a new tab or window)">http://www.ibm.com/privacy/details</a> in the
+section entitled “Cookies, Web Beacons and Other Technologies”,
+and the “IBM Software Products and Software-as-a-Service Privacy
+Statement” at <a class="xref" href="http://www.ibm.com/software/info/product-privacy" target="_blank" title="(Opens in a new tab or window)">http://www.ibm.com/software/info/product-privacy</a>.</p>
+</div>
+</div>
+<div class="topic concept nested1" xml:lang="en-us" id="trademarks"><h2 class="title topictitle2">Trademarks</h2>
+<div class="body conbody"><p class="p"><span class="keyword">IBM</span>, the <span class="keyword">IBM</span> logo, and ibm.com® are trademarks or registered
+trademarks of International Business Machines Corp., registered in
+many jurisdictions worldwide. Other product and service names might
+be trademarks of <span class="keyword">IBM</span> or
+other companies. A current list of <span class="keyword">IBM</span> trademarks is available
+on the web at "Copyright and trademark information" at <a class="xref" href="http://www.ibm.com/legal/copytrade.shtml" target="_blank" title="(Opens in a new tab or window)">http://www.ibm.com/legal/copytrade.shtml</a>.</p>
+<p class="p">Adobe, the Adobe logo, and PostScript are either registered trademarks
+or trademarks of Adobe Systems
+Incorporated in the United States, and/or other countries.</p>
+<p class="p">Four Js is a registered trademark of Four Js Development
+Tools Ltd.</p>
+<p class="p">Genero and its logo are registered trademarks
+of Four Js Development Tools Europe Ltd.</p>
+<p class="p">Intel, Itanium, and Pentium are
+trademarks or registered trademarks of Intel Corporation
+or its subsidiaries in the United States and other countries.</p>
+<p class="p">Linux is a registered trademark
+of Linus Torvalds in the United States, other countries, or both.</p>
+<p class="p">Microsoft, Windows, and Windows NT are trademarks of Microsoft Corporation in the United States,
+other countries, or both.</p>
+<p class="p">Java™ and all Java-based trademarks
+and logos are trademarks or registered trademarks of Oracle and/or
+its affiliates. </p>
+<p class="p">UNIX is a registered trademark
+of The Open Group in the United States and other countries. </p>
+<p class="p">Other company, product, or service names may be trademarks or service
+marks of others. </p>
+<p class="p">Contact support: <a class="xref" href="http://www.ibm.com/support/entry/portal/" target="_blank" title="(Opens in a new tab or window)">http://www.ibm.com/support/entry/portal/</a></p>
+<p class="p">© Copyright The PHP Group 1997-2012. See
+the license/notices.txt file for additional information.</p>
+</div>
+</div>
+</div>
+</body>
+</html>

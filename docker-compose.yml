@@ -1,0 +1,39 @@
+version: '3'
+services:
+  php-app:
+    image: app.php.local
+    container_name: 'php-app'
+    restart: unless-stopped
+    hostname: app.php.local
+    build:
+      context: .
+      dockerfile: ./web.Dockerfile
+    ports:
+        - 80:80
+
+    # SHARED VOLUMES
+    volumes:
+      - './php-app:/var/www/php-app:consistent'
+
+    depends_on:
+      - mysql-db
+    links:
+      - mysql-db
+
+  mysql-db:
+    image: mysql:5.7
+    hostname: db.mysql.local
+    container_name: 'mysql-db'
+    restart: unless-stopped
+    ports:
+      - 3306:3306
+
+    # SHARED VOLUMES
+    volumes:
+      - '../mysql-data:/var/lib/mysql:consistent'
+
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: my-database
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user
