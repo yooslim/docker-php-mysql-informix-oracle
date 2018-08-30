@@ -17,6 +17,7 @@ This container is based on the official MySQL image, it will obviously creates a
 
 ### Installation
 All you have to do is running the docker compose file !
+
 `docker-compose up -d --build`
 
 This will take a couple of minutes to build the images and run containers ! You need to have port 80 and 3306 not occupied, otherwise you have to change the default ports that docker uses for both containers (see docker-compose.yml).
