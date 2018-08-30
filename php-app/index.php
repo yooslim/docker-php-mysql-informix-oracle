@@ -37,5 +37,5 @@ try {
 }
 catch (PDOException $e)
 {
-    echo $e->getMessage();
+    echo 'ERROR: ' . $e->getMessage();
 }
