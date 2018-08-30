@@ -13,7 +13,7 @@ $oracle = [
 
 
 try {
-    $conn = new PDO('oci:dbname=//' . $oracle['host'] . '/' . $oracle['database'], $oracle['username'], $oracle['password']);
+    $dbh = new PDO('oci:dbname=//' . $oracle['host'] . '/' . $oracle['database'], $oracle['username'], $oracle['password']);
 } catch(PDOException $e) {
     echo 'ERROR: ' . $e->getMessage();
 }
@@ -34,8 +34,6 @@ $informix = [
 
 try {
     $dbh = new PDO('informix:host=' . $informix['host'] . ';service=' . $informix['service'] . ';server=' . $informix['server'] . ';database=' . $informix['database'] . ';protocol=' . $informix['protocol'] . ';', $informix['username'], $informix['password']);
-}
-catch (PDOException $e)
-{
+} catch (PDOException $e) {
     echo 'ERROR: ' . $e->getMessage();
 }
