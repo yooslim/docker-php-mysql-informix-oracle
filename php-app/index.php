@@ -14,7 +14,6 @@ $oracle = [
 
 try {
     $conn = new PDO('oci:dbname=//' . $oracle['host'] . '/' . $oracle['database'], $oracle['username'], $oracle['password']);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch(PDOException $e) {
     echo 'ERROR: ' . $e->getMessage();
 }
