@@ -1,5 +1,5 @@
 This is a docker services configuration that runs two containers :
- - A PHP container holding a LAMP environment AND which is able to manage Oracle and Informix distant DBMS.
+ - A PHP container holding a LAMP environment AND which is able to manage Oracle and Informix remote DBMS.
  - A MySQL database container with persisted data.
 
 ### Container 1 : PHP-APP
